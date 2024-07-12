@@ -8,7 +8,7 @@ const PriceDetails = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="mb-4">
-            <label className="block text-gray-700 mb-2" htmlFor="rent">Rent</label>
+            <label className="block text-gray-700 mb-2 font-inter-medium " htmlFor="rent">Rent <span className='text-red-500 text-sm'>*</span></label>
             <div className="relative">
               <input
                 id="rent"
@@ -20,7 +20,7 @@ const PriceDetails = () => {
           </div>
 
           <div className="mb-4">
-            <label className="block text-gray-700 mb-2" htmlFor="security">Security</label>
+            <label className="block text-gray-700 mb-2 font-inter-medium" htmlFor="security">Security  <span className='text-red-500 text-sm'>*</span></label>
             <div className="relative">
               <input
                 id="security"
@@ -32,20 +32,21 @@ const PriceDetails = () => {
           </div>
 
           <div className="mb-4">
-            <label className="block text-gray-700 mb-2" htmlFor="maintenanceType">Maintenance</label>
+            <label className="block text-gray-700 mb-2 font-inter-medium" htmlFor="maintenanceType">Maintenance  <span className='text-red-500 text-sm'>*</span></label>
             <div className="relative">
               <select
                 id="maintenanceType"
-                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-400"
               >
-                <option value=""></option>
+                <option value="not-included" >Maintenance</option>
+                <option value="in-rent">Included In Rent</option>
                 <option value="extra">Extra Maintenance</option>
               </select>
             </div>
           </div>
 
           <div className="mb-4">
-            <label className="block text-gray-700 mb-2" htmlFor="maintenanceAmount">Maintenance</label>
+            <label className="block text-gray-700 mb-2 font-inter-medium" htmlFor="maintenanceAmount">Maintenance  <span className='text-red-500 text-sm'>*</span></label>
             <div className="flex space-x-4">
               <input
                 id="maintenanceAmount"
@@ -54,7 +55,7 @@ const PriceDetails = () => {
                 className="w-1/2 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <select
-                className="w-1/2 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-1/2 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-400"
               >
                 <option value="monthly">Monthly</option>
                 {/* Add more options as needed */}
@@ -64,7 +65,7 @@ const PriceDetails = () => {
         </div>
 
         <div className="mb-4">
-          <label className="block text-gray-700 mb-2" htmlFor="additionalPricing">Additional Pricing details to convey to agent?</label>
+          <label className="block text-gray-700 mb-2 font-inter-medium" htmlFor="additionalPricing">Additional Pricing details to convey to agent?</label>
           <textarea
             id="additionalPricing"
             placeholder="Do you have any concerns regarding pricing of your property? Add your concerns here or call us."

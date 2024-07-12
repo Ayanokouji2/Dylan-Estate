@@ -37,7 +37,7 @@ const SellerPropertyListing = () => {
             className={`${active === 3 ? 'bg-[#EDF2F8]' : ''} p-4  text-center hover:cursor-pointer px-3  `}
             onClick={() => setActive(3)}
           >
-            Features  Amenities
+            Features & Amenities
           </div>
           <div
             className={`${active === 4 ? 'bg-[#EDF2F8]' : ''} py-7  text-center hover:cursor-pointer px-3  `}
