@@ -4,7 +4,7 @@ import BuyerForm from '../components/BuyerForm/BuyerForm'
 
 const SellerHome = () => {
   return (
-    <div className=' bg-[#122B49] px-32 pt-12 pb-[7.22rem]'>
+    <div className='h-[90vh] bg-[#122B49] px-32 pt-12 pb-[7.22rem]'>
       <div className='text-white '>
         <h2 className='text-3xl font-merri-regular'>Sell or Rent your Property For Free</h2>
         <p className='max-w-3xl py-3 font-merri-light'>Whether you’re ready to sell or looking for answers, we’ll guide you with data and expertise specific to your needs.</p>
