@@ -167,29 +167,29 @@ const Features = () => {
                 value="Fully Furnished"
                 checked={formData.furnishing === "Fully Furnished"}
                 onChange={handleChange}
-                className="  w-5 h-5 p-1  "
+                className="  custom-radio  "
               />
               Fully Furnished
             </label>
-            <label>
+            <label className="flex items-center gap-2">
               <input
                 type="radio"
                 name="furnishing"
                 value="Semi Furnished"
                 checked={formData.furnishing === "Semi Furnished"}
                 onChange={handleChange}
-                className="mr-2"
+                className="custom-radio"
               />
               Semi Furnished
             </label>
-            <label>
+            <label className="flex items-center gap-2">
               <input
                 type="radio"
                 name="furnishing"
                 value="Unfurnished"
                 checked={formData.furnishing === "Unfurnished"}
                 onChange={handleChange}
-                className="mr-2"
+                className="custom-radio"
               />
               Unfurnished
             </label>
@@ -219,17 +219,17 @@ const Features = () => {
       </div>
 
       <div className="border-b p-4 rounded">
-        <h2 className="text-lg font-medium mb-2">Tiles</h2>
-        <div className="space-y-2">
+        <h2 className="text-lg font-medium my-4">Tiles</h2>
+        <div className=" grid grid-cols-3 items-center ">
           {["Normal White Tiles", "Marble", "Vitrified Tiles"].map((tile) => (
-            <label key={tile} className="block">
+            <label key={tile} className="flex gap-2 items-center">
               <input
                 type="checkbox"
                 name="tiles"
                 value={tile}
                 checked={formData.tiles.includes(tile)}
                 onChange={(e) => handleCheckboxChange(e, "tiles")}
-                className="mr-2"
+                className="w-6 h-6 p-1 text-slate-100 "
               />
               {tile}
             </label>
